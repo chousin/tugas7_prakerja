@@ -1,0 +1,168 @@
+/* Resetting default margin and padding for all elements */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .judul {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .deskripsi {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Menu styling */
+.wrap {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+nav.menu {
+    background: #333;
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.menu ul li {
+    display: inline;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav.menu ul li a:hover {
+    background: #575757;
+}
+
+/* Sidebar styling */
+.sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+
+.sidebar .widget {
+    margin-bottom: 20px;
+}
+
+.sidebar .widget h2 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar .widget p {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Blog content styling */
+.blog {
+    float: left;
+    width: 65%;
+    margin-top: 20px;
+}
+
+.blog .conteudo {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog .conteudo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog .conteudo h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.blog .conteudo .post-info {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog .conteudo p {
+    margin-bottom: 20px;
+}
+
+.blog .conteudo .continue-lendo {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #4CAF50;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.blog .conteudo .continue-lendo:hover {
+    background: #45a049;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .wrap {
+        width: 95%;
+        padding: 0;
+    }
+
+    .sidebar {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .blog {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav.menu ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav.menu ul li a {
+        padding: 10px;
+    }
+}
